@@ -1,0 +1,353 @@
+.vintages {
+  &__hero {
+    background-image: url("../assets/images/splash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100vw;
+  }
+
+  &__herotext {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-bottom: 270px;
+    margin-top: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: $vinerist-white;
+    align-self: center;
+  }
+
+  &__tabs {
+    bottom: -1px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    align-items: bottom;
+    border-bottom: 5px solid $vinerist-pink;
+  }
+
+  &__lefttab {
+    display: flex;
+    width: 40%;
+    margin-left: 8px;
+    color: $vinerist-white;
+    background-color: $vinerist-pink;
+    border-bottom: none;
+    padding-left: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 20px 0px 0px 0px;
+  }
+
+  &__righttab {
+    display: flex;
+    width: 40%;
+    border-radius: 20px 0px 0px 0px;
+    color: $vinerist-blacktext;
+    background-color: $vinerist-white;
+    border-bottom: none;
+    padding-left: 14px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  &__addbutton {
+    display: flex;
+    align-items: center;
+    height: 87px;
+    background-color: $vinerist-blackbackground;
+  }
+
+  &__addicon {
+    padding-left: 26px;
+  }
+
+  &__text {
+    padding-left: 11px;
+    color: $vinerist-white;
+    font-size: 18px;
+  }
+
+  &__container {
+    margin-top: 20px;
+    padding-bottom: 13px;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__container2 {
+    margin-top: 20px;
+    padding-bottom: 13px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  &__headertext {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+  }
+
+  &__headertext2 {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    border-bottom: 1px solid black;
+  }
+
+  &__img {
+    padding-top: 21px;
+    width: 100%;
+    height: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__test {
+    padding-top: 21px;
+    width: 100%;
+    height: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  &__image {
+    width: 100%;
+    height: 30vh;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: $vinerist-blacktext;
+  }
+
+  &__vineyardyear {
+    padding-top: 6px;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    color: $vinerist-blacktext;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__leftcontainer {
+    width: 33%;
+    padding-top: 23px;
+  }
+
+  &__rightcontainer {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 23px;
+  }
+
+  &__description {
+    padding-top: 16px;
+    width: 100%;
+  }
+
+  &__delete {
+    padding-top: 8px;
+    height: 17.5px;
+    width: 17.5px;
+  }
+
+  &__descriptiontext {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: $vinerist-blacktext;
+  }
+
+  &__bottomcontainer {
+    padding-top: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #000000;
+    align-items: center;
+  }
+
+  &__stars {
+    height: 22px;
+  }
+
+  &__stars2 {
+    padding-top: 42px;
+    height: 32px;
+  }
+
+  &__link {
+    color: $vinerist-pink;
+    border-bottom: 1px solid $vinerist-pink;
+    padding-top: 17px;
+  }
+
+  &__load {
+    padding-top: 17px;
+    text-align: center;
+  }
+
+  &__chevron {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6px;
+    padding-bottom: 44px;
+  }
+
+  &__form {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__crumbs {
+    padding-top: 22px;
+    margin-left: 25px;
+  }
+
+  &__crumbslink {
+    color: $vinerist-pink;
+  }
+
+  &__formheader {
+    width: 90%;
+    border-bottom: 1px solid #000000;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 22px;
+  }
+
+  &__labels {
+    margin-top: 24px;
+  }
+
+  &__upload {
+    margin-top: 24px;
+  }
+
+  &__back {
+    padding-right: 8px;
+  }
+
+  &__backtext {
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 500;
+    color: $vinerist-blacktext;
+  }
+  &__leftcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+  }
+
+  &__rightcontainer {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
+  }
+
+  &__infocontainer {
+    display: flex;
+  }
+
+  &__vintname {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  &__vintinfo {
+    padding-top: 6px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    font-style: italic;
+  }
+
+  &__vintdesc {
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__plus {
+    height: 31px;
+    width: 31px;
+    padding-right: 8px;
+  }
+
+  &__addreview {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 56px;
+  }
+
+  &__addtext {
+    color: $vinerist-blacktext;
+  }
+}
+
+.searchbar {
+  width: 100%;
+  height: 37px;
+  background-color: $vinerist-gray;
+  border-radius: 20px;
+}

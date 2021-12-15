@@ -1,0 +1,93 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Wineries {
+  id             Int              @id @default(autoincrement())
+  winery_name    String
+  winery_address String
+  winery_desc    String
+  coordinates    String
+  Vintages       Vintages[]
+  image          WineriesImages[]
+}
+
+model WineriesImages {
+  id        Int      @id @default(autoincrement())
+  wineryID  Int
+  imageLink String
+  Wineries  Wineries @relation(fields: [wineryID], references: [id])
+
+  @@index([wineryID], name: "wineryID")
+}
+
+model Vintages {
+  id           Int              @id @default(autoincrement())
+  vintage_name String
+  vintage_year String
+  assoc_winery Int
+  description  String
+  Wineries     Wineries         @relation(fields: [assoc_winery], references: [id])
+  Reviews      Reviews[]
+  images       VintagesImages[]
+
+  @@index([assoc_winery], name: "assoc_winery")
+}
+
+model VintagesImages {
+  id         Int      @id @default(autoincrement())
+  vintagesID Int
+  imageLink  String
+  Vintages   Vintages @relation(fields: [vintagesID], references: [id])
+
+  @@index([vintagesID], name: "vintagesID")
+}
+
+model Reviews {
+  id          Int             @id @default(autoincrement())
+  User        Users           @relation(fields: [user_id], references: [id])
+  user_id     String
+  user_level  String
+  user_review String
+  star_review Int
+  timestamp   DateTime        @default(now())
+  likes       Int             @default(0)
+  vintageID   Int
+  Vintages    Vintages        @relation(fields: [vintageID], references: [id])
+  images      ReviewsImages[]
+
+  @@index([vintageID], name: "vintageID")
+}
+
+model ReviewsImages {
+  id        Int     @id @default(autoincrement())
+  reviewsID Int
+  imageLink String
+  Reviews   Reviews @relation(fields: [reviewsID], references: [id])
+
+  @@index([reviewsID], name: "reviewsID")
+}
+
+model User_Accounts {
+  id            String   @id @default(uuid())
+  hash          String
+  email         String   @unique
+  creation_Date DateTime @default(now())
+  user          Users?
+}
+
+model Users {
+  id         String        @id @default(uuid())
+  first_name String
+  last_name  String
+  new_user   Boolean       @default(true)
+  account_ID String        @unique
+  user_img   String?
+  account    User_Accounts @relation(fields: [account_ID], references: [id])
+  reviews    Reviews[]     
+}

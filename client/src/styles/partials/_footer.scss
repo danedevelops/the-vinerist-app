@@ -1,0 +1,53 @@
+.footer {
+  width: 100vw;
+  height: 151px;
+  background-color: $vinerist-gray;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 25px;
+  }
+
+  &__address {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 3%;
+    color: #575252;
+  }
+
+  &__phone {
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 3%;
+    color: #575252;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 25px;
+    padding-bottom: 22px;
+  }
+
+  &__icon {
+    width: 33px;
+    height: 33px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  &__logo {
+    width: 40vw;
+    height: 8vh;
+  }
+}

@@ -1,0 +1,73 @@
+.reviews {
+  margin-top: 20px;
+  padding-bottom: 13px;
+  margin-left: 25px;
+  margin-right: 25px;
+  list-style-type: none;
+
+  &__image {
+    width: 100%;
+    height: 30vh;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__level {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: $vinerist-blacktext;
+    width: 49%;
+  }
+
+  &__delete {
+    width: 17px;
+    height: 17px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__review {
+    padding-top: 16px;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  &__stars {
+    height: 21px;
+  }
+
+  &__timestamp {
+    padding-top: 16px;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  &__item {
+    border-bottom: 1px solid black;
+    padding-bottom: 28px;
+  }
+}
+
+.star {
+  height: 21px;
+  padding-top: 15px;
+}
+
+.empty__star {
+  height: 21px;
+  padding-top: 15px;
+}

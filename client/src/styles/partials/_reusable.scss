@@ -1,0 +1,19 @@
+.reusable {
+  &__input {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid pink;
+    height: 36px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+
+    &:focus {
+      border: 1px solid purple;
+    }
+  }
+}
+
+.counter__glasses {
+  background: url(../../assets/icons/glasses.svg);
+}

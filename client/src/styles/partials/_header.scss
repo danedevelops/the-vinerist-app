@@ -1,0 +1,59 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40px;
+  background-color: transparent;
+  color: #333;
+  transform: translateY(0);
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40px;
+  background-color: $vinerist-white;
+  color: rosybrown;
+  transform: translateY(10);
+  padding-top: 8px;
+  z-index: 1;
+}
+
+.logo {
+  padding-left: 14px;
+}
+
+.links {
+  display: none;
+  padding: 0;
+  margin: 0 24px;
+
+  @include desktop {
+    display: flex;
+  }
+}
+
+.link-item {
+  display: inline-block;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.hamburgericon {
+  margin-right: 20px;
+}
+
+.header__fixed {
+  position: sticky;
+}

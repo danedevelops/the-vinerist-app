@@ -1,0 +1,251 @@
+.home {
+  &__hero {
+    background-image: url("../assets/images/vineyard.jpg");
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+
+  &__titleheader {
+    font-family: "Roboto", sans-serif;
+    color: $vinerist-white;
+  }
+
+  &__subheader {
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    line-height: 34px;
+    padding-left: 95px;
+    padding-right: 95px;
+    margin-top: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: $vinerist-white;
+  }
+
+  &__moderators {
+    background-color: $vinerist-blackbackground;
+    padding-bottom: 37.5px;
+  }
+
+  &__header {
+    padding-top: 40px;
+    color: $vinerist-white;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    line-height: 53px;
+    font-weight: 400;
+    padding-left: 30px;
+  }
+
+  &__text {
+    padding-top: 40px;
+    color: $vinerist-white;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 31px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  &__moderatorimg {
+    height: 12.875rem;
+    width: 12.875rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__moderatorcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    padding-top: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    color: $vinerist-white;
+  }
+
+  &__role {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 36px;
+    color: $vinerist-white;
+  }
+
+  &__contentimg {
+    width: 85%;
+    height: 59%;
+    margin-top: 67px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80px;
+  }
+
+  &__contentheader {
+    padding-top: 47px;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    line-height: 53px;
+    font-weight: 400;
+    padding-left: 31px;
+    padding-bottom: 18.75px;
+  }
+
+  &__contenttext {
+    color: $vinerist-blacktext;
+    padding-bottom: 47px;
+    padding-left: 31px;
+    padding-right: 31px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 26px;
+  }
+
+  &__wineriesbutton {
+    margin-left: 31px;
+  }
+
+  &__reviewsheader {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 10%;
+    margin-left: 31px;
+    margin-right: 31px;
+    padding-top: 41px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #000000;
+  }
+
+  &__featuredreviews {
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  &__featuredreviews2 {
+    display: flex;
+    border-bottom: 1px solid #000000;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 61px;
+  }
+
+  &__reviews--left {
+    margin-top: 34px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__reviewimg {
+    width: 8.375rem;
+    height: 8.375rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__starimg {
+    width: 106.5px;
+    height: 21.3px;
+    padding-top: 44.8px;
+  }
+
+  &__reviews--right {
+    margin-top: 34px;
+    padding-left: 19px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  &__featuredwine {
+    padding-bottom: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__featuredwinery {
+    padding-bottom: 9px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__featuredtext {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__vintage {
+    margin-top: 61px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  &__vintageimg {
+    width: 85vw;
+    height: 59%;
+    border-radius: 80px;
+    object-fit: cover;
+    object-position: center;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__vintageheader {
+    padding-top: 51px;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    line-height: 53px;
+    font-weight: 400;
+    padding-left: 31px;
+    padding-bottom: 18.75px;
+  }
+
+  &__vintagetext {
+    font-weight: 300;
+    padding-top: 46px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $vinerist-blacktext;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  &__vintagebutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 47px;
+    margin-top: 47px;
+    margin-bottom: 56px;
+  }
+}

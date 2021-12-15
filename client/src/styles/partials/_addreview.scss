@@ -1,0 +1,125 @@
+.addreview {
+  padding-bottom: 54px;
+
+  &__header {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 10%;
+    margin-left: 25px;
+    margin-right: 25px;
+    border-bottom: 1px solid #000000;
+    padding-top: 21px;
+  }
+  &__form {
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+  }
+
+  &__labels {
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__radiobuttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    align-content: center;
+  }
+
+  &__radioheader {
+    font-style: italic;
+    font-size: 17px;
+    line-height: 36px;
+  }
+
+  &__input {
+    padding-top: 4px;
+  }
+
+  &__uploadcontainer {
+    width: 99%;
+    height: 38%;
+    border: 3px solid #030303;
+    align-items: center;
+  }
+
+  &__uploadimage {
+    object-fit: cover;
+    object-position: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__submitbutton {
+    margin-top: 47px;
+    margin-top: 47px;
+    margin-bottom: 47px;
+  }
+
+  &__previewimg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
+}
+
+.radio {
+  padding-top: 20px;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  position: relative;
+  visibility: hidden;
+  &::before {
+    width: 14px;
+    height: 14px;
+    background-color: $vinerist-gray;
+
+    content: "";
+    visibility: visible;
+    position: absolute;
+  }
+
+  &:checked {
+    &::after {
+      //inner
+      width: 12.5px;
+      height: 13px;
+      background-color: $vinerist-blackbackground;
+      content: "";
+
+      visibility: visible;
+      position: absolute;
+    }
+  }
+}
+
+.radio__align {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form__text-area {
+  resize: none;
+  height: 120px;
+  background-color: $vinerist-gray;
+}
+
+.reusable__input {
+  height: 35px;
+  background-color: $vinerist-gray;
+  border: none;
+}
